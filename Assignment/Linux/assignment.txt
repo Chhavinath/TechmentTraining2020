@@ -1,0 +1,16 @@
+~$ nano sample.txt
+~$ cat sample.txt
+one 
+two
+three
+four
+five
+six
+seven
+eight
+nine
+ten
+~$ chmod 764 sample.txt   // 7(user)=read,write,execute  6(group)=read,write,no execution  4(others)=read,no write, no execution
+~$ ls -l sample.txt
+-rwxrw-r-- 1 user user 50 Jun  4 07:14 sample.txt
+~$ 
