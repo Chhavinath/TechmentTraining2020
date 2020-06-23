@@ -1,0 +1,147 @@
+<html>
+    <head>
+       <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+	</head>
+
+  <nav class="navbar navbar-inverse navbar-expand-md bigBar" style="background-color: #ff4000;">
+            <div class="container-fluid">
+              
+                    <img src="logo1.png" height="80" width="80" style="margin: 5px; border-radius: 100px">
+              
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                 <li class="nav-item" style="margin-left: 10px;">
+                    <a class="nav-link" style="color: black; font-family: 'Akronim';font-size: 22px;" href="home.html"><h2>CANTOMATA</h2></a>
+                 </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+            
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="aboutus.html"><span class="glyphicon glyphicon-user"></span> ABOUT US</a>
+                </li>
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="signup.html"><span class="glyphicon glyphicon-log-in"></span> SIGN UP</a>
+                </li>
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="login.html"><span class="glyphicon glyphicon-log-in"></span> SIGN IN</a>
+                </li>
+          
+              </ul>
+            </div>
+          </nav>
+
+  <body background="bg.jpg">
+
+      <div class="row" style="margin: 20px">
+        <div class="leftcolumn" style="width: 40%">
+            <div class="card"style=" height:300px">
+               
+               <table style="height: 100%">
+                   <tr style="margin:20px;">
+                      <td>
+                        <button onclick="getLocation()">
+                          <h2>Nariyal Nation</h2>
+                          <br>Address: Atithi Hotel, Civil Lines, Raigarh, Chhattisgarh 496001 <br>Hours: Open ⋅ Closes 11PM <br>Phone: 096444 22205<br>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr style="margin:20px;">
+                      <td>
+                        <button>
+                          <h2>Nariyal Nation</h2>
+                          <br>Address: Atithi Hotel, Civil Lines, Raigarh, Chhattisgarh 496001 <br>Hours: Open ⋅ Closes 11PM <br>Phone: 096444 22205<br>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr style="margin:20px;">
+                      <td>
+                        <button>
+                          <h2>Nariyal Nation</h2>
+                          <br>Address: Atithi Hotel, Civil Lines, Raigarh, Chhattisgarh 496001 <br>Hours: Open ⋅ Closes 11PM <br>Phone: 096444 22205<br>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr style="margin:20px;">
+                      <td>
+                        <button>
+                          <h2>Nariyal Nation</h2>
+                          <br>Address: Atithi Hotel, Civil Lines, Raigarh, Chhattisgarh 496001 <br>Hours: Open ⋅ Closes 11PM <br>Phone: 096444 22205<br>
+                        </button>
+                      </td>
+                    </tr>
+               </table>
+               
+            </div>
+        </div>
+        <div class="rightcolumn" style="width: 60%">
+          <div class="card" style="height: 570px; margin-left:10px; width: 100%">
+            <div class="gmap_canvas"><iframe style="width: 100%; height: 570px" id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+          </div>
+        </div>
+
+      <table style="margin:20px; width: 100%; height: 100px; background-color: #ffffff">
+        
+      </table>
+      
+
+
+     </div>
+   </div>
+</div>
+
+
+<!-- Footer -->
+<br><br>
+<div class="footer" style="background-color: #ff4000">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="signup.html" class="btn btn-primary">Sign up!</a><br>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer">© 2020 Copyright:
+    <a href="home.html">Cantomata.com</a>
+  </div>
+  <!-- Copyright -->
+
+</div>
+<!-- Footer -->
+     </div>
+  </body>
+</html>

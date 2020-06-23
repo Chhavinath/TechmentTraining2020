@@ -1,0 +1,306 @@
+<html>
+    <head>
+     <script src="jquery.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/home.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+        <link rel="stylesheet" href="css/mystyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <meta name="google-signin-scope" content="profile email">
+        <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Akronim' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+  </head>
+
+  <nav class="navbar navbar-inverse navbar-expand-md bigBar" style="background-color: #ff4000;">
+            <div class="container-fluid">
+              
+                    <img src="logo1.png" height="80" width="80" style="margin: 5px; border-radius: 100px">
+              
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                 <li class="nav-item" style="margin-left: 10px;">
+                    <a class="nav-link" style="color: black; font-family: 'Akronim';font-size: 22px;" href="home.html"><h2>CANTOMATA</h2></a>
+                 </li>
+              </ul>
+              <ul class="navbar-nav navbar-right">
+            
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="aboutus.html"><span class="glyphicon glyphicon-user"></span> ABOUT US</a>
+                </li>
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="signup.html"><span class="glyphicon glyphicon-log-in"></span> SIGN UP</a>
+                </li>
+                <li>
+                  <a style="color: #e0ebeb; margin-right: 20px; font-size: 20px" href="login.html"><span class="glyphicon glyphicon-log-in"></span> SIGN IN</a>
+                </li>
+          
+              </ul>
+            </div>
+          </nav>
+
+  <body background="bg1.jpg">
+
+<!--<div class="row1">
+<div class="row2">
+  <div class="col1"></div>
+  <div class="col2">
+
+    <center><h1 class="h1">Please Login!</h1></center>
+   
+
+    <form>
+    <div class="form-group row">
+      <label class="col-sm-2 col-form-label"> E-mail</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="userid" name="userid" type="text" placeholder="Enter-Your-Name"  required><br>
+      </div> 
+      </div> 
+      
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input class="form-control" type="password" id="pwd" name="pwd" placeholder="Enter-Your-Password" required><br>
+        </div> 
+        </div>   
+   
+     <!--<input type="checkbox" checked="checked" name="remember"> Remember me <br> -->
+    <!--<button id="submitbtn" name="submitbtn" type="submit">Login</button></form>
+   
+      
+    <center> <h4> or</h4></center>
+     <center> <div class="g-signin2" data-onsuccess="onSignIn" id="myP"></div></center>
+<img id="myImg" ><br>
+<p id="name"></p> 
+<div id="status"></div>
+</div>
+</div>
+
+</div>-->
+
+<style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+      .center{
+        margin-top: 20px;
+        width: 500px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+      }
+    
+      input[type=submit] {
+        background-color: #0000CC;
+        width: 500px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 6px 16px;
+        text-decoration: none;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+      input[type=reset]{
+        background-color: #FF3300;
+        width: 500px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 6px 16px;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-bottom: 20px; 
+        cursor: pointer;
+      }
+      input[type=text], input[type=number] {
+        margin: auto;
+        width: 500px;
+        height: 35px;
+        font-size: 20px;
+        border-radius: 5px;    
+        border-left-width: 15px;
+        border-color: #300108;
+      }
+      @media screen and (max-width: 600px) {
+        .col-25, .col-75, input[type=submit] {
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+</style>
+
+
+<table>
+      <tr>
+        <td style="width: 60%">
+          <center><img src="person1.jpg" style="border-radius: 600px"></center>
+        </td>
+        <td>
+          <form class="center" action="Dashboard.html" enctype="multipart/form-data" method="get">
+            <center><label><b>LOG IN</b></label><br></center>
+
+            <label><b>Mobile</b></label><br>
+            <input type="text" id="mono"><br>
+            
+            <label><b>Password</b></label><br>
+            <input type="text" id="pwd"><br>
+          
+            <a href="Dashboard.html"><input type="submit" value="SIGN IN" style="font-size: 20px"></a>
+
+          </form>
+        </td>
+      </tr>
+    </table>
+
+<script>
+
+  const url='http://localhost:3000/users'
+
+
+
+
+
+// alert(sessionStorage.getItem("user_role"));
+  
+
+// window.location.href = "home.html";
+     
+ 
+
+function getuser(){
+  
+axios.get(url).then(resp => {
+  alert("Mobile number or password is invalid");
+    data = resp.data;
+    var array = getDataById(data);
+    if(array.length<2){
+      alert("You have not registered");
+      window.location.href = "login.html";
+    }
+    else{
+      alert("Done");
+
+      window.location.href = "Dashboard.html";
+    }
+    
+    // '<%Session["user_id"] = "' + array[0] + '"; %>';
+    // '<%Session["UserName"] = "' + array[1] + '"; %>';
+    // '<%Session["user_email"] = "' + array[3] + '"; %>';
+    // '<%Session["user_role"] = "' + array[3] + '"; %>';
+    //  alert('<%=Session["UserName"] %>');
+    // sessionStorage.clear();
+    
+    // sessionStorage.removeItem("user_id");
+    // sessionStorage.removeItem("user_name");
+    // sessionStorage.removeItem("user_email");
+    // sessionStorage.removeItem("user_role");
+
+    
+})
+.catch(error => {
+    console.log(error);
+});   
+
+
+    function getDataById(data) {
+            var elements;
+            var i=0;
+            data.map(e => {
+                if(e.mono == mono.value && e.password == pwd.value){
+                    i=1;
+              
+                }
+            })
+            if(i==0){
+              alert("Mobile number or password is invalid");
+            }
+            return elements;
+    }
+}
+
+
+      function onSignIn(googleUser) {
+      // window.location.href='success.jsp';
+
+     
+      
+          var profile = googleUser.getBasicProfile();
+          var imagurl=profile.getImageUrl();
+          var name=profile.getName();
+          var email=profile.getEmail();
+          document.getElementById("myImg").src = imagurl;
+          document.getElementById("name").innerHTML = name;
+          document.getElementById("myP").style.visibility = "hidden";
+                  
+                   sessionStorage.clear();
+                   var nid = new Date().getTime();
+                   sessionStorage.setItem("user_id",nid);
+    sessionStorage.setItem("user_name",name);
+    sessionStorage.setItem("user_email",email);
+    sessionStorage.setItem("user_role","Buyer");
+   
+          document.getElementById("status").innerHTML = 'Welcome '+name+'!<a href=home.html?email=/>Continue with Google login</a></p>'
+
+           
+           
+       }
+      
+      
+      function myFunction() {
+        gapi.auth2.getAuthInstance().disconnect();
+          location.reload();
+      }
+ 
+       </script>
+
+
+<!-- <button onclick="myFunction()">Signout</button> -->
+
+<!-- Footer -->
+<!-- Footer -->
+<br><br>
+<div class="footer" style="background-color: #ff4000">
+
+  <!-- Footer Elements -->
+  <div class="container">
+
+    <!-- Call to action -->
+    <ul class="list-unstyled list-inline text-center py-2">
+      <li class="list-inline-item">
+        <h5 class="mb-1">Register for free</h5>
+      </li>
+      <li class="list-inline-item">
+        <a href="signup.html" class="btn btn-primary">Sign up!</a><br>
+      </li>
+    </ul>
+    <!-- Call to action -->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer">© 2020 Copyright:
+    <a href="home.html">Cantomata.com</a>
+  </div>
+  <!-- Copyright -->
+
+</div>
+<!-- Footer -->
+     </div>
+  </body>
+  </html>
